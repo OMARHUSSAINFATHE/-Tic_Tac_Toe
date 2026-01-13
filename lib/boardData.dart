@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:xo_play/board_botton.dart';
 
 class BoardData{
    String symboll;

@@ -10,7 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  static const String routeName="HomePage";
   TextEditingController player1Controller =TextEditingController();
   TextEditingController player2Controller =TextEditingController();
 
@@ -47,6 +46,13 @@ class _HomePageState extends State<HomePage> {
                   border: OutlineInputBorder(),
 
                 ),
+                validator: (value){
+                  if(value==null||value.isEmpty){
+                    return "Pleas Enter Your Name ";
+                  }
+                  return null;
+                },
+
               ),
             ),
             Container(
@@ -61,7 +67,14 @@ class _HomePageState extends State<HomePage> {
                   labelText: "PlayerName1",
                   border: OutlineInputBorder(),
 
+
                 ),
+                validator: (value){
+                  if(value==null||value.isEmpty){
+                    return "Pleas Enter Your Name ";
+                  }
+                  return null;
+                },
               ),
             ),
             SizedBox(height: 10,)  ,

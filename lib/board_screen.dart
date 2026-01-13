@@ -4,7 +4,7 @@ import 'package:xo_play/board_botton.dart';
 import 'package:xo_play/winner_screen.dart';
 
 class BoardScreen extends StatefulWidget {
-  static const String routeName = "Board";
+  static const String routeName = "BoardScreen";
 
   const BoardScreen({super.key});
 
@@ -146,6 +146,10 @@ class _BoardScreenState extends State<BoardScreen> {
           ),
         ));
   }
+
+
+
+
 
   int counter = 1;
   int ScorePlayer1 = 0;

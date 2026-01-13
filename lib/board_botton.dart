@@ -4,6 +4,7 @@ import 'package:xo_play/boardData.dart';
 
 
 typedef BoardCallback =void  Function();
+
 class BoardBtn extends StatelessWidget {
 BoardData board;
 BoardCallback onClick;
